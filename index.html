@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Associazione Italiana Occhio Secco</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon (aggiungi il tuo logo favicon.ico nella stessa cartella) -->
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Hero Section -->
+    <header class="bg-white shadow-md">
+      <div style="display: flex; justify-content: center">
+        <div>
+          <!-- Logo se ce l'hai -->
+          <!-- <img src="logo.png" alt="Logo Associazione" class="w-10 h-10 rounded-full" /> -->
+          <h1 style="text-align: center;" class="text-2xl font-bold">Associazione Italiana Occhio Secco</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-blue-100 py-20 text-center">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-4">Sensibilizzazione, supporto e informazione per chi soffre di occhio secco in Italia</h2>
+        <p class="text-lg text-gray-700 mb-6">
+          Insieme per migliorare la qualità della vita di chi convive con questa patologia.
+        </p>
+        <a href="#contatti" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+          Contattaci
+        </a>
+      </div>
+    </section>
+
+    <!-- Chi Siamo -->
+    <section class="py-16 bg-white" id="chi-siamo">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-4">Chi siamo</h3>
+        <p class="text-gray-700 text-lg">
+          Siamo persone comuni, unite dall’esperienza dell’occhio secco, che hanno deciso di aiutarsi a vicenda.
+          Crediamo nella condivisione, nell’informazione corretta e nel sostegno reciproco.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contatti" class="bg-gray-800 text-white py-10">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h4 class="text-xl font-semibold mb-2">Contatti</h4>
+        <p class="mb-1">Email: <a href="mailto:segreteria@associazione.it" class="underline">segreteria@associazione.it</a></p>
+        <p>Instagram: <a href="https://instagram.com/associazioneocchiosecco" target="_blank" class="underline">@associazioneocchiosecco</a></p>
+        <div class="mt-6 text-sm text-gray-400">
+          &copy; <span id="annoAttuale"></span> Associazione Italiana Occhio Secco. Tutti i diritti riservati.
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+        document.querySelector("#annoAttuale").innerText = new Date().getFullYear();
+
+    </script>
+  </body>
+</html>
